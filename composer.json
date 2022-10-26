@@ -1,0 +1,14 @@
+{
+  "name": "sebk/small-maker",
+  "licence": "GPL-3.0-only",
+  "type": "library",
+  "autoload": {
+    "psr-4": { "Sebk\\SmallMaker\\": "src" }
+  },
+  "authors": [
+    {
+      "name": "Sébastien Kus",
+      "email": "seb@small-iceberg.dev"
+    }
+  ]
+}
