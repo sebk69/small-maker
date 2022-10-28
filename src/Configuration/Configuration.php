@@ -1,14 +1,14 @@
 <?php
 /**
- * This file is a part of sebk/small-orm-core
+ * This file is a part of sebk/small-maker
  * Copyright 2021 - Sébastien Kus
  * Under GNU GPL V3 licence
  */
 
-namespace Sebk\SmallMaker\Generator;
+namespace Sebk\SmallMaker\Configuration;
 
 
-class Config
+class Configuration
 {
     protected $bundle;
     protected $connection;

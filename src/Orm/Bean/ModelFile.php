@@ -50,7 +50,7 @@ class [modelName] extends Model
         // To one relations
         $hasToOne = false;
         foreach ($this->dbGateway->getToOnes($this->table) as $toOne) {
-            if (file_exists($this->selector->getDaoFolder() . "/" . $this->getClassnameForTable($toOne["toTable"]) . ".php")) {
+            if (file_exists($this->selector->getDaoFolder() . "ModelFile.php/" . $this->getClassnameForTable($toOne["toTable"]) . ".php")) {
                 if (!$hasToOne) {
                     $getters .= "\n    // To one relations getters";
                     $hasToOne = true;
@@ -62,7 +62,7 @@ class [modelName] extends Model
         // To many relations
         $hasToMany = false;
         foreach ($this->dbGateway->getToManys($this->table) as $toMany) {
-            if (file_exists($this->selector->getDaoFolder() . "/" . $this->getClassnameForTable($toMany["toTable"]) . ".php")) {
+            if (file_exists($this->selector->getDaoFolder() . "ModelFile.php/" . $this->getClassnameForTable($toMany["toTable"]) . ".php")) {
                 if (!$hasToMany) {
                     $getters .= "\n    // To many relations getters";
                     $hasToOne = true;
@@ -96,7 +96,7 @@ class [modelName] extends Model
         // To one relations
         $hasToOne = false;
         foreach ($this->dbGateway->getToOnes($this->table) as $toOne) {
-            if (file_exists($this->selector->getDaoFolder() . "/" . $this->getClassnameForTable($toOne["toTable"]) . ".php")) {
+            if (file_exists($this->selector->getDaoFolder() . "ModelFile.php/" . $this->getClassnameForTable($toOne["toTable"]) . ".php")) {
                 if (!$hasToOne) {
                     $setters .= "\n    // To one relations setters";
                     $hasToOne = true;
@@ -113,7 +113,7 @@ class [modelName] extends Model
         // To many relations
         $hasToMany = false;
         foreach ($this->dbGateway->getToManys($this->table) as $toMany) {
-            if (file_exists($this->selector->getDaoFolder() . "/" . $this->getClassnameForTable($toMany["toTable"]) . ".php")) {
+            if (file_exists($this->selector->getDaoFolder() . "ModelFile.php/" . $this->getClassnameForTable($toMany["toTable"]) . ".php")) {
                 if (!$hasToMany) {
                     $setters .= "\n    // To many relations setters";
                     $hasToMany = true;
