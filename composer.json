@@ -10,5 +10,8 @@
       "name": "Sébastien Kus",
       "email": "seb@small-iceberg.dev"
     }
-  ]
+  ],
+  "require": {
+    "league/flysystem": ">=3.10.2"
+  }
 }
