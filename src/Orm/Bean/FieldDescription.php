@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * This file is a part of sebk/small-maker
+ * Copyright 2021-2023 - Sébastien Kus
+ * Under GNU GPL V3 licence
+ */
+
 namespace Sebk\SmallMaker\Generator\Bean;
 
 use Sebk\SmallOrmCore\Dao\Field;

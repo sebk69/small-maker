@@ -1,7 +1,7 @@
 <?php
 /**
  * This file is a part of sebk/small-maker
- * Copyright 2021 - Sébastien Kus
+ * Copyright 2021-2023 - Sébastien Kus
  * Under GNU GPL V3 licence
  */
 
